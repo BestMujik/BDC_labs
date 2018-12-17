@@ -1,0 +1,78 @@
+\section*{DATABASE NORMALIZATION}
+\phantomsection
+
+All the objects and implimentation of each practical exercise must be included in a T-SQL script.
+The final user should be able to run the script multiple times without errors. 
+
+Note: The exported script will not be considered.
+
+\section{Design of the database}
+
+Design the database that will be in the 3NF or BCNF. Attach the diagram of this database. It should include 3 types of relationships:
+
+
+\begin{enumerate}[itemsep=2pt]
+\item 1:1;
+\item 1:n;
+\item n:n;
+\end{enumerate}
+
+Describe all the entities from business point of view and the role of each defined relationship.
+
+\section{Table Creation and Modification}
+
+The database must have:
+\begin{enumerate}[itemsep=2pt]
+\item 4 different database constraints;
+\item 1 default value;
+\item minimum 5 records per table;
+\item the tabled should be included in 2 different schemes;
+\item for 3 key elements of the database to be defined synonyms;
+\end{enumerate}
+
+\section*{MANIPULATION OF THE DATABASE}
+\phantomsection
+
+\section{SELECT query in T-SQL}\label{sec:select}
+
+\begin{enumerate}[itemsep=2pt]
+\item Write a query on you database that will use AGGREGATION FUNCTION, GROUP BY and HAVING clause;
+\item Show an example of a query that use subqueries in other places except WHERE ;
+\end{enumerate}
+
+Attach the screens with the output of the queries.
+
+\section{Stored procedures and function defined by user}
+
+1. Create a user defined function based on example A from previous exercise
+
+2. Create a stored procedure based on example B from previous exercise. 
+
+\section{Indexes}
+
+Increse the performance of your database by creating an idex for one of the execrcises from previous section \hyperref[sec:select]{SELECT query in T-SQL}. 
+
+Show the results of this optimization using the performance excution plan before and after the index have been created (attach screens if it is necessary).
+
+
+\section{View administration}
+
+Create a view bazed on one of your scheme. Use one of the options: CHECK OPTION or SCHEMA BINDING. 
+
+Show with examples how it is working (attach screens if it is necessary).
+
+\section{Triggers}
+
+Create a trigger that will forbid modification of the column that have DEFAULT value.
+
+\section{Database backup and restore}
+
+Create a differenatial backup of your database. Restore it to a new database named restoredDB.
+
+\section{Script}
+
+Included the script that will realize all the tasks.
+
+\lstinputlisting[style=mystyle, language=SQL, caption={Database NAMEOFYOURDATABASE}, label=list1]{sourcecode/script.sql}
+
+\clearpage
